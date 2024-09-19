@@ -1,5 +1,7 @@
-.htaccess
-php.ini
-index.php
 registry
 deleted
+.htaccess
+certs
+index.php
+php.ini
+favicon.ico

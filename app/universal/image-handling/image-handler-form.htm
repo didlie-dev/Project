@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Handler</title>
+</head>
+<body>
+    <form id="imageForm">
+        <label for="fileInput">Select an image:</label>
+        <input type="file" id="fileInput" name="fileInput" accept="image/*">
+        <button type="button" id="resizeButton">Resize Image</button>
+        <button type="button" id="displayButton">Display Image</button>
+        <button type="button" id="sendButton">Send Image to Server</button>
+        <!-- we don't abrt -->
+        <!-- <button type="button" id="cancelButton">Cancel</button> -->
+    </form>
+    <div id="imageContainer"></div>
+<!-- image handler !!! javascript cannot be loaded via links due to security rewrites code -->
+    <script src="universal/image-handler-object.js"></script>
+<!-- event listeners -->
+    <script src="universal/image-handler-event-listeners.js"></script>
+</body>
+</html>

@@ -49,5 +49,8 @@ public function filter_request(){
     ini_set('display_errors', 1);//comment out after deployment
 }
 ```
+  7) Possible solutions to avoiding the deletion of openssl certificates written to the root directory:
+    - edit the openssl.capath variable in php.ini to be in a higher directory (included)
+    - functionally avoid files with the certificate extension
 
 ### This template works by handling every request to the server, rewriting .htaccess and php.ini on every instance of a request, filtering all Superglobals sent from the client, validating all files in the website root by referencing the ./root/registry to see what files you want to be there, and finally ends the php script execution (after your app code was executed) redundently to resist auto crawler load testing.

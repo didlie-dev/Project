@@ -35,4 +35,4 @@ case"left":if("none"===f.style.display&&""!==f.innerHTML)for(;"none"===f.style.d
 break
 case"right":if("none"===H.style.display&&""!==H.innerHTML)for(;"none"===H.style.display;)L.click()}}var c,r,k,b,f=document.getElementById("_3p-left-body"),u=document.getElementById("_3p-center-body"),H=document.getElementById("_3p-right-body"),g=document.getElementsByTagName("body")[0],L=document.getElementById("_3p-right"),M=document.getElementById("_3p-left"),T=document.getElementById("_3p-footer"),m=document.getElementById("_3p-header")
 return L.onclick=d,M.onclick=a,g.onscroll=function(){k<g.clientHeight&&y()},{adjust:o,scroll_right:d,scroll_left:a,fill:e,append:n,select_panel:p}}()
-window.onresize=_3p.adjust,window.onload=_3p.adjust
+window.onresize=_3p.adjust,window.onload=_3p.adjust;

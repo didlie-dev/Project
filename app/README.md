@@ -15,7 +15,7 @@ _3p.scroll_left() : moves the view to the next hidden panel to the left.
 
 _3p.fill() : takes two parameters, (a,b) where a can be "left", "center", or "right", and b is the new innerHTML of that panel.
 
-_3p.append() : takes two parameters, (a,b) ... a is the same as the above, and b is any created DOM object to replace the existing content inside the selected panel.
+_3p.append() : takes two parameters, (a,b) ... a is the same as the above, and b is any created DOM object to replace the existing content inside the selected panel. To replace content, first _3p.fill(a,""), then _3p.append(a,DOM_ELEMENT)
 
 This is not free software. This software has one author and is not open source. All derivatives of this software are only legal by securing a written contract with the original author of this software agreeing to the release and use of this program and/or any derivative software. Reverse engineering the functionality of this program is also a violation of copyright. This program is protected as an original design and original code. This program can only be used by parties, other than the author, through written contract, and purchasing a license. 
 

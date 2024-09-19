@@ -26,7 +26,19 @@ class request implements I_request{
         //$GLOBALS
         //$_SERVER
         //$_REQUEST
-        //$_POST
+
+        /** POST VARIABLES ARE ALWAYS JSON */
+        // if($_POST && $_POST['JSON']){
+        //     try {
+        //         JSON.parse($_POST['JSON']);
+        //         // return true;
+        //     } catch (e) {
+        //         echo "{JSON: NOT VALID - INPUT FAILURE in filter_request}";
+        //         die();
+        //     }
+        // }
+        /** CONTINUE VALIDATION TO DISALLOW NON JSON POST */
+
         //$_GET
         //$_FILES
         //$_ENV
@@ -39,7 +51,8 @@ class request implements I_request{
     }
 
     public function start_application(){
-        require_once("index.php");//maybe index.php is good too, but its not the one in the root
+
+        require_once("index.php");//its not the one in the root
     }
 
     public function exit_application(){

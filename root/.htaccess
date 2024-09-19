@@ -25,3 +25,15 @@ RewriteRule ^(.*)\.asp $1.php [NS]
 RewriteRule ^(.*)\.net $1.php [NS]
 
 #redirect on match
+
+##################################################################
+####IF ANY CALL TO THE SERVER REFERS TO A FILE THAT DOESN'S EXIST
+####THIS FORWARDS THE CALL TO INDEX.PHP
+RewriteRule ^(app|dict|ns|tmp)\/|\.ini$ - [R=404]
+
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php [L,QSA]
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]
+##################################################################
