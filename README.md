@@ -1,3 +1,8 @@
+#DECENTRALIZED  WEBRTC DATA APPLICATION FOR WEB CONTENT DELIVERY AND APPLICATION DEVELOPMENT
+This application is a great starting place to build a phpdesktop based, or simple php/javascript application using webrtc for cryptocurrency development, decentralized website content delivery, self-hosted content, etc. This example was built on phpdesktop, but runs on any php server (newest version)
+
+
+#THIS APPLICATION WAS WRITTEN ON TOP OF MY _3P php FRAMEWORK
 # Secure _3p PHP Application
 
 This is a template for the creation of secure PHP applications using _3p. Simply clone this repository. Your application will reside in the /app folder. Follow all the steps below to secure your specific site according to the URL, REQUEST logic, and file requirements, as stated in the steps below.
